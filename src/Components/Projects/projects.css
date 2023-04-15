@@ -1,0 +1,129 @@
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.proj--heading {
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 1.3em;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.25rem;
+}
+
+.cards-container {
+    perspective: 800px;
+}
+
+.cards-container:hover>.cards {
+    cursor: pointer;
+    transform: rotateY(180deg) rotateZ(180deg);
+}
+
+.cards {
+    width: 16rem;
+    height: 20rem;
+    position: relative;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #1f242d;
+    border: 1px solid #0ef;
+}
+
+.front {
+    justify-content: center;
+}
+
+.front h1 {
+    color: #aaa;
+    font-size: 1.7rem;
+}
+
+.back {
+    color: #fff;
+    gap: 1rem;
+    transform: rotateY(180deg) rotateZ(180deg);
+}
+
+.back img {
+    display: inline-block;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.btn.projct-btn {
+    opacity: 1;
+    animation: none;
+    font-size: .8rem;
+    border: 1px solid #0ef;
+}
+
+.btn-hire {
+    opacity: 1;
+    animation: none;
+}
+
+/* Responsive Css */
+
+/* For Laptops */
+
+
+@media(max-width:1024px) {
+    .cards {
+        width: 14rem;
+        height: 19rem;
+    }
+}
+
+/* For Tablets */
+
+
+@media(max-width:768px) {
+
+    .projects-container {
+        grid-gap: .5rem;
+    }
+}
+
+/* For Mobiles */
+
+@media(max-width:480px) {
+
+    .proj--heading {
+        margin: 1.3em 0;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+
+    .cards {
+        width: 14rem;
+        height: 18rem;
+    }
+
+    .btn-hire {
+        margin-top: 3rem;
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,131 @@
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    padding: 4.8rem 10% 0;
+    gap: 1rem;
+}
+
+.about-content {
+    max-width: 600px;
+    display: grid;
+    gap: .3rem;
+}
+
+.about-content h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.about-content h3:nth-of-type(2) {
+    margin-bottom: 1rem;
+}
+
+
+.about-content h3 span {
+    color: #0ef;
+}
+
+.about-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.about-content p {
+    line-height: 1.8rem;
+    word-spacing: 2px;
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+}
+
+.media-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social-icon {
+    text-decoration: none;
+    height: 3rem;
+    width: 3rem;
+    border: 1px solid #0ef;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.social-icon.scroll {
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.1s*var(--i));
+}
+
+@media(prefers-reduced-motion) {
+    .social-icon {
+        animation: none;
+    }
+}
+
+.social-icon::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #0ef;
+    box-shadow: none;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.7s ease-in;
+}
+
+.social-icon:hover::before {
+    transform: scale(1);
+    box-shadow: 0 0 6px #0ef;
+}
+
+.social-icon ion-icon {
+    font-size: 1.6rem;
+    color: #fff;
+    transition: 0.7s ease-in;
+}
+
+.social-icon:hover ion-icon {
+    color: #1f242d;
+}
+
+/* Responsive Css */
+
+/* For Mobiles */
+
+@media(max-width:480px) {
+    #about {
+        padding: 4.8rem 10% 0;
+        gap: 8rem;
+    }
+
+    .about-content p {
+        font-size: 1.3rem;
+    }
+
+    .social-icon {
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .social-icon ion-icon {
+        font-size: 2.5rem;
+    }
+
+    .social-icon.scroll {
+        opacity: 0;
+        animation: slideTop 1s ease forwards;
+        animation-delay: calc(.1s*var(--i));
+    }
+}

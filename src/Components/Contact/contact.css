@@ -1,0 +1,80 @@
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    margin-top: 5rem;
+    border: 1px solid #0ef;
+    width: 25rem;
+    aspect-ratio: 1/1;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 10px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    padding: 1.25em;
+}
+
+.form h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.form .inputBox {
+    width: 100%;
+    margin-top: 1.25em;
+}
+
+.form .inputBox input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.01);
+    border: none;
+    outline: none;
+    padding: .62em 1.25em;
+    border-radius: 35px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid transparent;
+    transition: border .5s;
+
+}
+
+.form .inputBox input:hover {
+    border: 1px solid #0ef;
+}
+
+.form .inputBox input::placeholder {
+    color: #aaa;
+}
+
+.btn-submit {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Responsive Css */
+
+/* For Mobiles */
+
+@media(max-width:480px) {
+
+    .form {
+        width: 28rem;
+        margin-top: 0rem;
+    }
+
+    .form .inputBox input {
+        padding: 1em 1.25em;
+        font-size: 1.1rem;
+    }
+
+    .form .inputBox {
+        margin: 3em 0;
+    }
+}
