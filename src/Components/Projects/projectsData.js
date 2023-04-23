@@ -21,6 +21,6 @@ export default [
     id: 4,
     title: "Portfolio",
     img: "assts/port.png",
-    porjLink: "#",
+    porjLink: "https://itsrealkb.github.io/Portfolio/",
   },
 ];
