@@ -38,5 +38,7 @@ Contributions to the portfolio are welcome! If you find a bug or would like to s
 ## Acknowledgments
 
 This project was inspired by the Codehals' portfolio design available on youtube, and was built as a learning exercise and for showing my abilities as a frontend web developer.
+
 here is his tutorials link go check him out he is great https://www.youtube.com/watch?v=Tkp3FDgOueM&t=12s
+
 and here is my portfolios' link which i deployed on netlifiy https://itsrealkb-portfolio.netlify.app/
