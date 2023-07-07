@@ -43,6 +43,7 @@
     backface-visibility: hidden;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     flex-direction: column;
     background: #1f242d;
     border: 1px solid #0ef;
@@ -66,7 +67,7 @@
 .back img {
     display: inline-block;
     width: 100%;
-    aspect-ratio: 1/1;
+    aspect-ratio: 4/3;
     object-fit: contain;
 }
 
@@ -75,6 +76,7 @@
     animation: none;
     font-size: .8rem;
     border: 1px solid #0ef;
+    margin-bottom: 1rem;
 }
 
 .btn-hire {

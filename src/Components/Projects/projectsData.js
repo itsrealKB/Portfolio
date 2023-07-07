@@ -7,9 +7,9 @@ export default [
   },
   {
     id: 2,
-    title: "Calculator",
-    img: "assts/calc1.png",
-    porjLink: "https://pf3kjd.csb.app/",
+    title: "Quiz App",
+    img: "assts/quiz-app.png",
+    porjLink: "https://advance-quiz-app.netlify.app/",
   },
   {
     id: 3,
@@ -19,8 +19,8 @@ export default [
   },
   {
     id: 4,
-    title: "Portfolio",
-    img: "assts/port.png",
-    porjLink: "https://itsrealkb.github.io/Portfolio/",
+    title: "Notes App",
+    img: "assts/notes-app-1.png",
+    porjLink: "https://kbs-notes-app.netlify.app/",
   },
 ];
